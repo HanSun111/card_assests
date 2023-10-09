@@ -1,0 +1,36 @@
+[
+
+    {
+        "image": "../pics/DrSeuss.jpg", 
+        "name": "DrSeuss"
+    },
+    {
+        "image": "../pics/EGG.jpg", 
+        "name": "EGG"
+    },
+    {
+        "image": "../pics/forever_alone.jpg", 
+        "name": "forever_alone"
+    },
+    {
+        "image": "../pics/hacker.jpg", 
+        "name": "hacker"
+    },
+    {
+        "image": "../pics/M.jpg", 
+        "name": "M"
+    },
+    {
+        "image": "../pics/pog.jpg", 
+        "name": "pog"
+    },
+    {
+        "image": "../pics/sad_pepe.jpg", 
+        "name": "sad_pepe"
+    },
+    {
+        "image": "../pics/sheesh.jpg", 
+        "name": "sheesh"
+    }
+    
+]
