@@ -5,7 +5,7 @@ let lockBoard = false;
 let score = 0;
 
 document.querySelector(".score").textContent = score;
-
+// requires live server to run fetch api. 
 fetch("./data/cards.json")
   .then((res) => res.json())
   .then((data) => {
@@ -44,18 +44,23 @@ function generateCards() {
 }
 
 function flipCard() {
-  if (lockBoard) return;
-  if (this === firstCard) return;
+    // keep cards from being flipped while comparing.
+  if (lockBoard) {
+    return;}
+  if (this === firstCard) {
+    return;
+  }
 
+  score++;
+  document.querySelector(".score").textContent = score;
+  
   this.classList.add("flipped");
-
   if (!firstCard) {
     firstCard = this;
     return;
   }
-
+  
   secondCard = this;
-  score++;
   document.querySelector(".score").textContent = score;
   lockBoard = true;
 
